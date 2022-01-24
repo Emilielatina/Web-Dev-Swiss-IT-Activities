@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/e14216dac2.js" crossorigin="anonymous"></script>
+ 
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Lesson 6: Collections</title>
+</head>
+<body class="grey darken-1">
+    <div class="container">
+        <h1 class="green-text text-lighten-3">Collections</h1>
+
+        <ul class="collection">
+            <li class="collection-item">Top 1</li>
+            <li class="collection-item">Top 2</li>
+            <li class="collection-item">Top 3</li>
+            <li class="collection-item">Top 4</li>
+        </ul>
+
+        <!--Collection as Links-->
+        <div class="collection">
+            <a href="" class="collection-item active">Top 1</a>
+            <a href="" class="collection-item">Top 2</a>
+            <a href="" class="collection-item">Top 3</a>
+            <a href="" class="collection-item">Top 4</a>
+            <a href="" class="collection-item">Top 5</a>
+
+            <!--Badge-->
+            <a href="" class="collection-item">
+                <span class="badge">44</span> Top 6
+            </a>
+            <a href="" class="collection-item">
+                <span class="badge new">48</span> Top 7
+            </a>
+        </div>
+
+        <!--With Header-->
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h4>Top Students</h4>
+            </li>
+            <li class="collection-item">Top 1</li>
+            <li class="collection-item">Top 2</li>
+            <li class="collection-item">Top 3</li>
+            <li class="collection-item">Top 4</li>
+        </ul>
+
+        <!--Secondary Header-->
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h4>Top Students</h4>
+            </li>
+            <li class="collection-item">
+                <div>Top 1
+                    <a href="" class="secondary-content">
+                        <i class="material-icons">close</i>
+                    </a>
+                </div>
+            </li>
+            <li class="collection-item">
+                <div>Top 2
+                    <a href="" class="secondary-content">
+                        <i class="material-icons">close</i>
+                    </a>
+                </div>
+            </li><li class="collection-item">
+                <div>Top 3
+                    <a href="" class="secondary-content">
+                        <i class="material-icons">close</i>
+                    </a>
+                </div>
+            </li><li class="collection-item">
+                <div>Top 4
+                    <a href="" class="secondary-content">
+                        <i class="material-icons">close</i>
+                    </a>
+                </div>
+            </li><li class="collection-item">
+                <div>Top 5
+                    <a href="" class="secondary-content">
+                        <i class="material-icons">close</i>
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+        <!--Avatar Content-->
+        <ul class="collection">
+            <li class="collection-item avatar">
+                <i class="material-icons blue circle">contacts</i>
+                <span class="title">James Reid</span>
+                <p>jamesreid@gamil.com
+                    <br>8-7000
+                </p>
+
+                <a href="" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons green circle">contacts</i>
+                <span class="title">Emilie Latina</span>
+                <p>emilielatina@gamil.com
+                    <br>123-4567
+                </p>
+                <a href="" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <i class="material-icons red circle">contacts</i>
+                <span class="title">Nadine Lustre</span>
+                <p>nadslustre@gamil.com
+                    <br>555-000
+                </p>
+                <a href="" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                </a>
+            </li>
+            <li class="collection-item avatar">
+                <img src="images/students.jpg" alt="" class="circle">
+                <span class="title">Nadine Lustre</span>
+                <p>nadslustre@gamil.com
+                    <br>555-000
+                </p>
+                <a href="" class="secondary-content">
+                    <i class="material-icons">grade</i>
+                </a>
+            </li>
+        </ul>
+
+
+    </div>
+    
+
+     <!--JQuery CDN-->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ 
+ 
+     <!--Jquery-->
+     <script>
+         $(document).ready(function(){
+     $('.fixed-action-btn').floatingActionButton({
+         direction: 'top'
+     });
+   });
+     </script>   
+</body>
+</html>

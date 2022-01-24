@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--Font Awesome-->
+     <script src="https://kit.fontawesome.com/e14216dac2.js" crossorigin="anonymous"></script>
+ 
+     <!--Material Icons-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+
+    <title>Lesson 8: Cards</title>
+</head>
+<body class="grey darken-3">
+    <div class="container">
+        <h1 class="teal-text text-lighten-2">Cards</h1>
+
+        <div class="row">
+            <div class="col s12 m6">
+                <!--Simple Card w/o Title-->
+                <div class="card">
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aut temporibus ducimus ratione corporis enim nulla, eos officia cum ea provident odit sunt voluptatibus dolorum ab? Officiis perspiciatis a velit.</p>
+                    </div>
+                </div>
+
+                <!--Add color-->
+                <div class="card green accent-2">
+                    <div class="card-content grey-text text-darken-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error accusamus doloremque enim vitae sint deleniti deserunt exercitationem eligendi voluptatum. Reiciendis ex incidunt nobis mollitia iste alias in cum expedita delectus!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6">
+                <!--Card with Title-->
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Card with Title</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi maxime culpa aspernatur ipsam tempora doloremque in sint porro, laudantium, dolores aut accusamus! Architecto amet itaque ullam vero eius a repudiandae?</p>
+                    </div>
+                    <!--Add link-->
+                    <div class="card-action">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m6">
+                <!--Card with Image-->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/students.jpg" alt="">
+                        <span class="card-title teal-text">Card Image</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus in, consectetur facere fugit laudantium eaque debitis culpa aut quae blanditiis neque dolorem quis tempore sequi, tenetur earum ipsa aliquam vitae.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6">
+                <!--Card with Image and Floating Button-->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="images/students3.jpg" alt="">
+                        <span class="card-title">Card Image</span>
+                        <a href="" class="btn-floating waves-effect waves-light blue halfway-fab">
+                            <i class="material-icons">add</i>
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum officiis nam tempora libero voluptas ipsam enim natus quis, quas, temporibus tenetur magnam amet, quos mollitia blanditiis animi obcaecati quod modi!</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="row">
+            <div class="col s12 m6">
+                <!--Horizontal Card-->
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="images/student2.jpg" alt="">
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <div class="span card-title">Horizontal</div>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit ex quam in ut. Maiores, tempora tenetur impedit facilis at cum, labore debitis ipsa consequatur quis deleniti! Consectetur aperiam voluptatem soluta.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="col s12 m6">
+                <!--Card Reveal-->
+                <div class="card">
+                    <div class="card-image waves-effect waves-light waves-block">
+                        <img src="images/students4.jpg" alt="" class="activator">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-content activator">Students
+                            <i class="material-icons right">more_vert</i>
+                        </span>
+                    </div>
+
+                    <!--Inside reveal-->
+                    <div class="card-reveal">
+                        <span class="card-title">Students
+                            <i class="material-icons right">close</i>
+                        </span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestiae ratione vero est nulla aperiam ab quasi distinctio veniam maxime vel, qui nobis sit! Recusandae, aut. Odio modi temporibus necessitatibus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    
+    
+    
+    </div>
+    
+
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <!--Jquery-->
+    <script>
+        $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton({
+        direction: 'top'
+    });
+  });
+    </script>
+
+</body>
+</html>

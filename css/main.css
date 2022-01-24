@@ -1,0 +1,28 @@
+.main-header{
+    background-color: rgb(105, 17, 17);
+    min-height: 600px;
+}
+.active-link{
+    color:bisque;
+    font-weight: bolder;
+}
+.main-header .showcase{
+    padding-top: 100px;
+}
+.section-developers{
+    background:bisque;
+    border-top: rgb(82, 2, 18) solid 5px;
+    border-bottom: rgb(82, 2, 18) solid 5px;
+}
+.primary-overlay{
+    background:rgb(82, 2, 18, 0.3);
+}
+.section-podcast{
+    background:bisque;
+    border-top: rgb(82, 2, 18) solid 5px;
+    border-bottom: rgb(82, 2, 18) solid 5px;
+    padding-top: 10px;
+}
+.section-podcast a {
+    margin-top: 30px;
+}

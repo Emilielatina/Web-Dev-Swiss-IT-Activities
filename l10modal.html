@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/e14216dac2.js" crossorigin="anonymous"></script>
+ 
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <style>
+        .page-footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .datepicker-date-display {
+            background: rgb(128, 21, 21);
+        }
+
+        .datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done {
+            color: rgb(128, 21, 21);
+        }
+    </style>
+   
+    <title>Lesson 10: Breadcrumbs Footer with Modal</title>
+</head>
+<body>
+
+    <!--Breadcrumbs-->
+    <nav class="red darken-4">
+        <div class="nav-wrapper">
+            <div class="container">
+                <div class="col s12">
+                    <a href="" class="breadcrumb">HOME</a>
+                    <a href="" class="breadcrumb">ABOUT</a>
+                    <a href="" class="breadcrumb">ADMISSIONS</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Date Picker-->
+    <div class="container">
+        <form>
+            <div class="input-field">
+                <input type="text" class="datepicker">
+                <label for="date">Choose a date</label>
+            </div>
+        </form>
+
+        <!--Autocomplete-->
+
+        <div class="row">
+            <div class="col s12">
+                <div class="input-field col s12">
+                    <i class="material-icons red-text text-darken-4 prefix">textsms</i>
+                    <input type="text" id="autocomplete-input" class="autocomplete">
+                    <label for="autocomplete-input">Autocomplete</label>
+                </div>
+            </div>
+        </div>
+
+        
+         <!-- Modal Trigger: Modal1 -->
+        <a class="waves-effect waves-red white red-text text-darken-2 btn modal-trigger" href="#modal1">Modal</a>
+
+        <!-- Modal Trigger: Modal2 -->
+        <a class="waves-effect waves-light red white-text btn modal-trigger" href="#modal2">Modal</a>
+
+        <br><br>
+
+        <!--Materialbox with Caption-->
+        <div class="row">
+
+            <div class="col s12 m6">
+                <img src="images/student2.jpg" alt="" data-caption="Students" class="materialboxed responsive-img">
+            </div>
+        </div>   
+
+            <!--Materialbox Slider-->
+        <br><br>
+        
+        <section class="section">
+            <div class="row">
+                <div class="col s12">
+                    <div class="slider">
+                        <ul class="slides">
+                            <li>
+                                <img src="images/students4.jpg" alt="">
+                                <!--Center Align Caption-->
+                                <div class="caption center-align">
+                                    <h3 class="center-align">Students</h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+        <!--Modal1-->
+        <div id="modal1" class="modal modal-fixed-footer">
+            <div class="modal-content">
+                <h2>Modal</h2>
+                <div class="video-container">
+                    <iframe width="885" height="498" src="https://www.youtube.com/embed/9pcCdBVDKak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+                    </iframe>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum tempora dolore ducimus blanditiis. Quia odio modi explicabo est! Optio quas debitis unde deleniti ut fuga odio, quam inventore. Beatae rerum reprehenderit molestias corrupti blanditiis, laudantium incidunt explicabo neque sunt. Repellat est architecto aspernatur aliquid nemo tenetur iure omnis esse ut excepturi! Quis magni commodi ratione consequatur a necessitatibus ex laborum laudantium dolor atque, aperiam rem, sed voluptates ipsam recusandae fuga velit possimus nemo facilis. Nisi fuga accusamus voluptatem beatae, consequuntur odio nobis cum, nulla, totam reprehenderit eius ad voluptate alias illum laboriosam deserunt ipsa exercitationem perferendis! Quibusdam odio repellat natus?</p>
+            </div>
+
+            <!--Modal-Footer-->
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+        </div>
+
+        
+
+
+        <div style="height:500px;"> </div>
+
+        
+
+        <!--Modal2-->
+        <div id="modal2" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h2>Modal</h2>
+                <div class="video-container">
+                    <iframe width="885" height="498" src="https://www.youtube.com/embed/9pcCdBVDKak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+                    </iframe>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum tempora dolore ducimus blanditiis. Quia odio modi explicabo est! Optio quas debitis unde deleniti ut fuga odio, quam inventore. Beatae rerum reprehenderit molestias corrupti blanditiis, laudantium incidunt explicabo neque sunt. Repellat est architecto aspernatur aliquid nemo tenetur iure omnis esse ut excepturi! Quis magni commodi ratione consequatur a necessitatibus ex laborum laudantium dolor atque, aperiam rem, sed voluptates ipsam recusandae fuga velit possimus nemo facilis. Nisi fuga accusamus voluptatem beatae, consequuntur odio nobis cum, nulla, totam reprehenderit eius ad voluptate alias illum laboriosam deserunt ipsa exercitationem perferendis! Quibusdam odio repellat natus?</p>
+            </div>
+
+            <!--Modal-Footer-->
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+        </div>
+
+       
+        
+        
+
+        
+
+
+    <!--End of container-->        
+    </div>
+
+    
+    
+
+    <!--Footer-->
+    <footer class="page-footer red darken-2">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <h5 class="grey-text text-lighten-4">About Us</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, minima dolorem rem voluptas tempora excepturi reiciendis, quo necessitatibus animi delectus molestiae labore sapiente facere amet repellendus assumenda corrupti vero aspernatur.</p>
+                </div>
+                <div class="col s12 m4 offset-m2">
+                    <h5 class="grey-text text-lighten-4">Links</h5>
+                    <ul>
+                        <li>
+                            <a href="" class="white-text">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="" class="white-text">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="" class="white-text">Link 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright red darken-3">
+            <div class="container">
+                Copyright &copy; 2022
+                <a href="" class="grey-text text-lighten-3 right">Terms and Conditions</a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <!--Jquery-->
+    <script>
+        $(document).ready(function(){
+            //Datepicker
+            $('.datepicker').datepicker();
+
+            //Autocomplete
+            $('input.autocomplete').autocomplete({
+                data: {
+                    'Apple': null,
+                    'Microsoft': null,
+                    'Google': null
+                },
+                minLength: 2
+            });
+
+            //Modal
+            $(document).ready(function(){
+                $('.modal').modal();
+             });
+
+             //Materialboxed
+             $(document).ready(function(){
+                $('.materialboxed').materialbox();
+             });
+
+             //Materialbox Slider
+            $(document).ready(function(){
+                $('.slider').slider();
+
+            });
+            
+        });
+
+        
+
+    </script>
+</body>
+</html>
